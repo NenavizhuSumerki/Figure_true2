@@ -78,8 +78,12 @@ namespace Figure_true
         public virtual void Out()
         {
             Console.WriteLine($"Треугольник со сторонами {a}, {b}, {c} это {get_type()}.");
+if (valid())
+            {
+            
             Console.WriteLine($"Площадь треугольника: {area():f3}");
             Console.WriteLine($"Периметр треугольника: {perimeter():f3}");
+}
         }
 
     }
